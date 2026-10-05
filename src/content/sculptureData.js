@@ -1,0 +1,22 @@
+// Prototype copy. No private contact details or unverified production metrics.
+export const sculptureData = {
+  name: 'Himanshu Baheti', initials: 'HB', location: 'Dublin, Ireland',
+  title: 'A different\npoint of view.', subtitle: 'Data engineer. Computational science student.\nA little more than meets the eye.',
+  views: [
+    { id: 'front', title: 'The surface', label: 'Front', caption: 'A name is just the beginning.', note: 'Eight letters. A few different dimensions.' },
+    { id: 'side', title: 'The structure', label: 'Side', caption: 'Good work has depth.', note: 'Move around the outcome. Find the decisions.' },
+    { id: 'inside', title: 'The thinking', label: 'Inside', caption: 'This is where it gets interesting.', note: 'Pull the layers apart. Follow the connections.' },
+    { id: 'reverse', title: 'The person', label: 'Reverse', caption: 'There’s a life behind the work.', note: 'Pune. Tennis courts. New places. Now, Dublin.' },
+  ],
+  projects: [
+    { id: 'governance', name: 'Communication Governance', category: 'ENTERPRISE DATA ENGINEERING', tag: '01 / SYSTEMS', summary: 'Making complex communication workflows consistent.', tools: ['PySpark', 'Databricks', 'Azure'], front: 'At Bajaj Finserv, I worked on communication governance: bringing consistent controls to customer communications across multiple channels.', side: 'The work brought data processing, governance checks, and downstream delivery into an end-to-end engineering workflow.', inside: 'My contribution included data pipelines, migration from legacy processing, and data quality controls. This prototype uses a simplified illustrative architecture, with no internal rules or customer data.', stages: ['Ingest', 'Validate', 'Govern', 'Deliver'], detail: 'The challenge is more than moving data. It is making the rules, the transformations, and the delivery work together.', year: 'PROFESSIONAL WORK' },
+    { id: 'cloud', name: 'Salesforce Data Cloud', category: 'MIGRATION & INTEGRATION', tag: '02 / CONNECTIONS', summary: 'Connecting enterprise data to the people who use it.', tools: ['Databricks', 'Azure Blob', 'Salesforce'], front: 'During my data engineering internship, I worked on migration and onboarding for Salesforce Data Cloud.', side: 'Databricks processing connected through Azure Blob Storage to Salesforce Data Cloud, supporting scheduled synchronization and segmentation workflows.', inside: 'The work combined pipeline engineering with onboarding and stakeholder collaboration. Getting data into a platform is one part; making it useful to business users is another.', stages: ['Process', 'Store', 'Synchronize', 'Activate'], detail: 'An integration is only useful when the next person can work with it.', year: 'INTERNSHIP WORK' },
+    { id: 'research', name: 'Seeing through the noise', category: 'ACADEMIC MACHINE LEARNING', tag: '03 / RESEARCH', summary: 'Exploring chest X-ray segmentation and classification.', tools: ['Python', 'Computer vision', 'Model evaluation'], front: 'My final-year academic project explored lung segmentation and disease classification from chest X-ray images.', side: 'The project combined preprocessing, segmentation, and comparison across 13 models, examining four image classes.', inside: 'Model comparisons and evaluation formed part of the research. This was an academic project, not a clinically validated product; publication status is not claimed.', stages: ['Prepare', 'Segment', 'Compare', 'Evaluate'], detail: 'A prediction is the beginning of a question about evidence, evaluation, and limitations.', year: 'ACADEMIC WORK' },
+  ],
+  personal: [
+    { title: 'A different kind of focus.', label: 'ON COURT', text: 'State-level lawn tennis. The patience to practise, and the instinct to respond.' },
+    { title: 'Building under pressure.', label: 'IN THE ROOM', text: '10+ hackathons, a TIAA hackathon win, and a finalist place in the Technex–MLWare jigsaw challenge.' },
+    { title: 'Starting somewhere new.', label: 'DUBLIN, IE', text: 'Studying MSc Data and Computational Science at University College Dublin, building on enterprise engineering experience.' },
+  ],
+  about: 'I’m Himanshu Parag Baheti. I studied Information Technology at PICT in Pune, worked in data engineering at Bajaj Finserv, and now study Data and Computational Science at UCD. I’m interested in the connections between practical systems, computational thinking, and the people who use what we build.',
+};
