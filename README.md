@@ -103,3 +103,9 @@ Local edits do not update the live site until they are committed and pushed. The
 ## Finding your way around Life Court
 
 The start button explains the watch → read → continue sequence. Visitors can also choose any chapter from the chapter library without changing the match score. Opening a chapter preview pauses a running rally; closing it leaves the rally paused until the visitor explicitly resumes. Between Points is a growing personal story collection accessible without playing the match.
+
+## GitHub Pages alongside Render
+
+`.github/workflows/pages.yml` builds and deploys `main` to https://himanshubaheti.github.io/life-court-portfolio/ using `SITE_BASE_PATH=/life-court-portfolio/`. Vite and content asset paths use this prefix. Render continues to use the default `/` base; leave `SITE_BASE_PATH` unset on Render and retain its existing build command. No custom domain is configured.
+
+GitHub repository Settings → Pages uses GitHub Actions as its source. Each push to main triggers the Pages workflow independently of Render. To preview the Pages output locally, run `SITE_BASE_PATH=/life-court-portfolio/ npm run build`, then `npm run preview` and visit the `/life-court-portfolio/` path. Use normal `npm run build` for Render/root hosting.

@@ -1,7 +1,7 @@
 // Everything personal lives here. Replace the local media paths with your own files.
 // Stock imagery is a visual stand-in, never a claim to depict personal photographs.
 const photo = (file, id, alt) => ({
-  src: `/assets/images/${file}`,
+  src: `${import.meta.env.BASE_URL}assets/images/${file}`,
   fallback: `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1400&q=85`,
   alt,
 });
@@ -19,7 +19,7 @@ export const portfolioData = {
     { label: 'Email', href: '', detail: 'Add your email address', icon: 'mail' },
     { label: 'LinkedIn', href: '', detail: 'Add your LinkedIn URL', icon: 'arrow' },
     { label: 'GitHub', href: '', detail: 'Add your GitHub URL', icon: 'arrow' },
-    { label: 'Resume', href: '', placeholder: '/assets/documents/himanshu-baheti-resume.pdf', detail: 'Add your resume PDF', icon: 'download' },
+    { label: 'Resume', href: '', placeholder: `${import.meta.env.BASE_URL}assets/documents/himanshu-baheti-resume.pdf`, detail: 'Add your resume PDF', icon: 'download' },
   ],
   chapters: [
     {
@@ -30,7 +30,7 @@ export const portfolioData = {
       note: 'Always asking why. Usually taking the scenic route.',
       tags: ['Data engineer', 'Visual storyteller', 'Lifelong explorer'],
       image: photo('placeholder-origins.jpg', 'photo-1476514525535-07fb3b4ae5f1', 'Illustrative mountain landscape and a lakeside village'),
-      video: '/assets/videos/origins-timelapse.mp4', videoEnabled: false,
+      video: `${import.meta.env.BASE_URL}assets/videos/origins-timelapse.mp4`, videoEnabled: false,
       photoLabel: 'THE WORLD IS BIG. STAY CURIOUS.', photoCaption: 'A collection of places, people & possibilities.',
       stamp: 'EST. IN MAHARASHTRA', floating: 'Somewhere between\nlogic & a little magic.',
       memories: [
